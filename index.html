@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta property="og:title" content="" id="ogTitle" />
+    <meta property="og:description" content="" id="ogDescription" />
+    <meta property="og:image" content="" id="ogImage" />
+    <meta property="og:url" content="" id="ogUrl" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" id="twitterTitle" />
+    <meta name="twitter:description" content="" id="twitterDescription" />
+    <meta name="twitter:image" content="" id="twitterImage" />
+  <script type='text/javascript' src='//pl25146325.profitablecpmrate.com/4e/e9/6c/4ee96c95749a43a26506055cdc4f0b0d.js'></script>
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VGK21 - VIDEO FREE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+    nav h1 {
+      font-size: 24px;
+    }
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #444;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 1px solid #555;
+    }
+    .dropdown-menu a:hover {
+      background-color: #555;
+    }
+    .search-bar {
+      position: relative;
+    }
+    .search-bar input {
+      display: none;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-right: 5px;
+      transition: 0.3s ease-in-out;
+    }
+    .search-bar input.active {
+      display: inline-block;
+    }
+    .search-bar button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #0056b3;
+    }
+    #main-content {
+      padding: 20px;
+    }
+    #post-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .post {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .post img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .post button {
+      margin-top: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .post button:hover {
+      background-color: #0056b3;
+    }
+    #post-detail {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+    #post-detail img,
+    #post-detail video {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      #post-container {
+        grid-template-columns: 1fr;
+      }
+      .ads img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu-icon" onclick="toggleDropdown()">☰</div>
+    <h1>VGK21</h1>
+    <div class="search-bar">
+      <button onclick="toggleSearch()">🔍</button>
+      <input type="text" id="search-input" placeholder="Cari...">
+      <button onclick="searchPosts()">Cari</button>
+    </div>
+  </nav>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="index.html">Beranda</a>
+    <a href="#">Versi Lama</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+
+  <div id="main-content">
+    <div class="ads">
+      
+    </div>
+    <h2>Daftar Postingan</h2>
+    <div id="post-container">
+      <!-- Postingan akan dimuat di sini -->
+    </div>
+  </div>
+
+  <div id="post-detail">
+    <button onclick="goBack()"> Back Kembali</button>
+    <div id="post-detail-content"></div>
+    <div class="ads">
+      
+  </div>
+
+  <footer>
+    <p>&copy; 2024 GAYOK21 Blog. Dibuat dengan <span style="color: red;">&#10084;</span> untuk melaporkan error. 
+      <br>Hubungi kami di facebook<a href="https://www.facebook.com/profile.php?id=61565838249174">@GAYOK21</a>
+    </p>
+  </footer>
+
+<script>
+  const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2UCj_M2UdOxnHQgDhp8FpSOIXCjOi5qT9YuxHHX251U1hZhMU9F6Gx-YlvOmVpcl6qYLVdGtaSEkd/pub?output=csv";
+
+  const posts = [];
+
+  async function fetchPosts() {
+    try {
+      const response = await fetch(sheetURL);
+      const data = await response.text();
+      const rows = data.split("\n").slice(1); // Hapus baris header
+      
+      // Mengambil data dari setiap baris CSV dan menambahkannya ke array `posts`
+      rows.forEach((row, index) => {
+        const [judul, gambar, video, tag] = row.split(",");
+        posts.push({ id: index + 1, judul, gambar, video, tag }); // Menambahkan ID unik berdasarkan indeks
+      });
+
+      // Mengurutkan posts berdasarkan urutan terbaru
+      posts.reverse(); // Mengubah urutan array sehingga yang terbaru di atas
+
+      loadPosts(); // Memuat postingan ke halaman
+    } catch (error) {
+      console.error("Gagal mengambil data dari Google Sheets:", error);
+    }
+  }
+
+  function loadPosts(filteredPosts = posts) {
+    const container = document.getElementById("post-container");
+    container.innerHTML = ""; // Kosongkan kontainer sebelum memuat ulang postingan
+
+    // Menampilkan postingan dengan urutan terbaru di atas
+    filteredPosts.forEach(post => {
+      const postHTML = `
+        <div class="post">
+          <img src="${post.gambar}" alt="${post.judul}" onclick="openPost(${post.id})">
+          <h3>${post.judul}</h3>
+          <p>Tag: <a href="#" onclick="filterByTag('${post.tag}')">${post.tag}</a></p>
+          <button onclick="openPost(${post.id})">Lihat Selengkapnya</button>
+        </div>
+      `;
+      container.innerHTML += postHTML;
+    });
+  }
+
+  function openPost(postId) {
+    const post = posts.find(p => p.id === postId); // Mencari postingan berdasarkan ID unik
+    const detail = document.getElementById("post-detail");
+    detail.style.display = "block";
+    document.getElementById("main-content").style.display = "none";
+
+    const contentHTML = `
+      <h2>${post.judul}</h2>
+      <img src="${post.gambar}" alt="${post.judul}">
+      <video controls controlslist="nodownload" id="video-${postId}" onclick="playVideo('${post.video}', ${postId})">
+        <source src="${post.video}" type="video/mp4">
+      </video>
+    `;
+    document.getElementById("post-detail-content").innerHTML = contentHTML;
+
+    // Mengubah URL dengan ID postingan
+    window.history.pushState({ postId: post.id }, '', `/post/${post.id}`);
+  }
+
+  function playVideo(videoURL, postId) {
+    const videoElement = document.getElementById(`video-${postId}`);
+    videoElement.play();
+  }
+
+  function filterByTag(tag) {
+    const filteredPosts = posts.filter(post => post.tag.toLowerCase() === tag.toLowerCase());
+    loadPosts(filteredPosts); // Tampilkan postingan yang terfilter berdasarkan tag
+  }
+
+  function goBack() {
+    document.getElementById("post-detail").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+    
+    // Menutup video dan menghindari tabrakan iklan
+    const videoElement = document.querySelector('video');
+    if (videoElement) {
+      videoElement.pause();
+    }
+
+    // Mengembalikan URL ke halaman utama
+    window.history.pushState({}, '', '/');
+  }
+
+  function searchPosts() {
+    const query = document.getElementById("search-input").value.toLowerCase(); // Ambil nilai pencarian dan jadikan lowercase
+
+    // Filter postingan berdasarkan judul atau tag yang mengandung query pencarian
+    const filteredPosts = posts.filter(post => 
+      post.judul.toLowerCase().includes(query) || post.tag.toLowerCase().includes(query)
+    );
+
+    // Menampilkan hasil pencarian atau memberi pesan jika tidak ada hasil
+    if (filteredPosts.length > 0) {
+      loadPosts(filteredPosts);
+    } else {
+      document.getElementById("post-container").innerHTML = "<p>Postingan tidak ditemukan.</p>";
+    }
+  }
+
+  function toggleDropdown() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+
+  function toggleSearch() {
+    const searchInput = document.getElementById("search-input");
+    searchInput.classList.toggle("active");
+  }
+
+  // Memuat postingan saat halaman dimuat
+  window.addEventListener("load", function() {
+    fetchPosts();
+  });
+
+  // Memastikan bahwa URL yang dimasukkan dengan ID post akan menampilkan postingan yang sesuai
+  window.addEventListener("popstate", function(event) {
+    const postId = event.state ? event.state.postId : null;
+    if (postId) {
+      openPost(postId); // Menampilkan postingan berdasarkan ID dalam URL
+    } else {
+      document.getElementById("post-detail").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }
+  });
+
+</script>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JTJCK6PFCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JTJCK6PFCY');
+</script> 
+      <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.startgif', '1,4907853,4,10042,"div#histatsC {position: absolute;top:0px;left:0px;}body>div#histatsC {position: fixed;}"']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_gif_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" alt="" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/stats/i/4907853.gif?4907853&103"></div></a>
+</noscript>
+<!-- Histats.com  END  -->
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Ambil elemen konten dari halaman
+            var pageTitle = document.getElementById('pageTitle').textContent || 'Judul Default';
+            var pageDescription = document.getElementById('pageDescription').textContent || 'Deskripsi halaman default';
+            var pageImage = document.getElementById('pageImage').src || 'default-image.jpg';
+            var pageUrl = window.location.href; // URL halaman yang sedang diakses
+
+            // Update Open Graph Meta Tags
+            document.getElementById('ogTitle').setAttribute('content', pageTitle);
+            document.getElementById('ogDescription').setAttribute('content', pageDescription);
+            document.getElementById('ogImage').setAttribute('content', pageImage);
+            document.getElementById('ogUrl').setAttribute('content', pageUrl);
+
+            // Update Twitter Card Meta Tags
+            document.getElementById('twitterTitle').setAttribute('content', pageTitle);
+            document.getElementById('twitterDescription').setAttribute('content', pageDescription);
+            document.getElementById('twitterImage').setAttribute('content', pageImage);
+        });
+    </script>
+
+
+</body>
+</html>
